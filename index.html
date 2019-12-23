@@ -41,8 +41,8 @@
 </div>
 
 <div id="sbtn">
-	<a href="#"><img src="images/btn-rule.png" alt=""></a>
-	<a href="#"><img src="images/btn-zjcx.png" alt=""></a>
+	<a id="rule_btn" href="./rule.html"><img src="images/btn-rule.png" alt=""></a>
+	<a id="record_btn" href="#"><img src="images/btn-zjcx.png" alt=""></a>
 </div>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -85,10 +85,10 @@ $(document).ready(function(){
 		$('#wheelcanvas').rotate({
 			angle:0,
 			animateTo:angles+1800,
-			duration:8000,
+			duration:5000,
 			callback:function (){
 				//中奖提示
-				alert(txt);
+				alert("恭喜获得：" + txt + "!");
 				turnplate.bRotate = !turnplate.bRotate;
 			}
 		});

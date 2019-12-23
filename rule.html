@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>圣诞抽奖活动- 快来参与~</title>
+
+<link href="css/zzsc.css" rel="stylesheet" type="text/css">
+<style>
+.container{
+	margin: 0 auto;
+}
+.content{
+	position: absolute;
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	margin-top: 58%;
+}
+#obody{ text-align:center} 
+#center_div{
+    border-radius:5px;
+    margin:10px auto;
+    padding: 1em;
+    background:rgba(72, 75, 231, 0.664);
+    width:300px;
+    height:300px;
+    font: 1.3em sans-serif;
+    } 
+
+</style>
+
+</head>
+<body>
+
+<img src="images/game-bg.jpg" alt="" style="position: absolute;width: 100%;height: 100%;">
+
+<div class="content" style="margin-top: 58%;">
+    <div id="center_div">
+        <p style="color: rgb(255, 163, 25);">中奖规则：</p>
+        <p>此抽奖页面只对芯芯生效，其他人不予兑现~</p>
+        <p>此抽奖页面开发者保留最终解释权~</p>
+        <p><a href="#" onClick="goBack(this)">返回上一页</a></p>
+    </div>
+            
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+var turnplate={
+		restaraunts:[],				//大转盘奖品名称
+		colors:[],					//大转盘奖品区块对应背景颜色
+		outsideRadius:192,			//大转盘外圆的半径
+		textRadius:155,				//大转盘奖品位置距离圆心的距离
+		insideRadius:68,			//大转盘内圆的半径
+		startAngle:0,				//开始角度
+		bRotate:false				//false:停止;ture:旋转
+};
+function goBack (self){
+    history.back(-1);
+}
+$(document).ready(function(){
+    
+});
+</script>
+
+</body>
+</html>
